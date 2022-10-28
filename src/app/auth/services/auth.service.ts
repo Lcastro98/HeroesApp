@@ -40,6 +40,7 @@ export class AuthService {
   }
 
   logout() {
+    localStorage.removeItem('id');
     this._auth = undefined;
   }
 }
